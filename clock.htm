@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clock()">Time</button>
+    <p id="time"></p>
+    <SCRipt>
+       
+function clock(){
+var a = new Date();
+const Hour =a.getHours();
+const Min = a.getMinutes();
+const Sec = a.getSeconds();
+
+document.getElementById("time").innerHTML = Hour +"Hour" + Min + "Minutes" + Sec + "Seconds" ;
+setTimeout(clock,1000);
+}
+
+     
+    </SCRipt>
+</body>
+</html>
